@@ -1,0 +1,198 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* logo */
+.web {
+  color: var(--accent-color);
+}
+.studio {
+  color: #000000;
+}
+.web,
+.studio {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/* footer logo */
+.studio.foot {
+  color: var(--background-color);
+}
+
+/* site-nav */
+.site-nav,
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  color: var(--primary-text-color);
+}
+
+/* Take off dots from all ul lists */
+.nav-list,
+.contacts-list,
+.btn-list,
+.project-list,
+.features-list,
+.work-list,
+.team-list {
+  list-style: none;
+}
+
+/* Take off underline from all links */
+.link,
+.contacts-link,
+.web {
+  text-decoration: none;
+}
+
+/* Hero */
+.hero-title {
+  background-color: #2f303a;
+  color: var(--background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.btn {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+}
+
+.btn,
+.filter-btn {
+  cursor: pointer;
+}
+
+/* Section Features */
+.invisible {
+  color: var(--background-color);
+}
+.title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-list .text {
+  line-height: 1.71;
+}
+
+/* Work */
+.work-title,
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+/* Team */
+.teammate {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.job {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+.ftr {
+  background-color: #2f303a;
+}
+.addrs {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.addrs > span {
+  color: var(--background-color);
+}
+
+.location {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+/* Portfolio */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.filter-btn:focus,
+.filter-btn:hover {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+/* PROJECTS */
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
