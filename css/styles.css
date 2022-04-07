@@ -16,8 +16,9 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1200px;  
 }
+
 /* logo */
 .web {
   color: var(--accent-color);
@@ -31,6 +32,19 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+
+header>.container {
+  display: flex;
+  align-items: baseline;
+  height: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: baseline;
 }
 
 /* footer logo */
@@ -103,12 +117,16 @@ body {
 .btn {
   background-color: var(--accent-color);
   color: var(--background-color);
+  font-family: 'Roboto';
+  font-style: normal;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   align-items: center;
+  width: 200px;
+  height: 50px;
 }
 
 .btn,
@@ -117,8 +135,17 @@ body {
 }
 
 /* Section Features */
-.invisible {
-  color: var(--background-color);
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .title {
   color: var(--title-text-color);
@@ -142,6 +169,10 @@ body {
 }
 
 /* Team */
+.team {
+  background-color: #F5F4FA;
+}
+
 .teammate {
   font-weight: 500;
   font-size: 16px;
@@ -178,13 +209,17 @@ body {
 
 /* Portfolio */
 .filter-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: #f5f4fa;
-}
+  border-radius: 4px;
+  border-color: currentColor;
+  text-align: center;
+  }
 
 .filter-btn:focus,
 .filter-btn:hover {
@@ -193,6 +228,11 @@ body {
 }
 
 /* PROJECTS */
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -206,3 +246,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
