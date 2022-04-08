@@ -16,16 +16,22 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;  
-}
+  max-width: 1200px;  
+  }
 
-/* logo */
+  /* ________________________________HEADER_____________________________________________ */
+
+  /* logo */
 .web {
   color: var(--accent-color);
 }
 .studio {
   color: #000000;
 }
+.studio.foot {
+  color: var(--background-color);
+}
+
 .web,
 .studio {
   font-family: Raleway;
@@ -36,20 +42,15 @@ body {
 
 header>.container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   height: 80px;
-  margin-top: auto;
-  margin-bottom: auto;
+  justify-content: space-between;
+  
 }
 
 .nav-list {
   display: flex;
   align-items: baseline;
-}
-
-/* footer logo */
-.studio.foot {
-  color: var(--background-color);
 }
 
 /* site-nav */
@@ -99,10 +100,10 @@ header>.container {
 /* Hero */
 .hero {
   text-align: center;
+  background-color: #2f303a;
 }
 
 .hero-title {
-  background-color: #2f303a;
   color: var(--background-color);
   margin-top: 0;
   margin-bottom: 30px;
