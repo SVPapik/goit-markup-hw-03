@@ -16,12 +16,12 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;  
-  }
+  max-width: 1200px;
+}
 
-  /* ________________________________HEADER_____________________________________________ */
+/* ________________________________HEADER_____________________________________________ */
 
-  /* logo */
+/* logo */
 .web {
   color: var(--accent-color);
 }
@@ -34,26 +34,28 @@ body {
 
 .web,
 .studio {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
 
-header>.container {
+header > .container {
   display: flex;
   align-items: center;
   height: 80px;
   justify-content: space-between;
-  
 }
+
+/* site-nav */
 
 .nav-list {
   display: flex;
   align-items: baseline;
+  width: 294px;
+  justify-content: space-between;
 }
 
-/* site-nav */
 .site-nav,
 .contacts-link {
   font-weight: 500;
@@ -79,14 +81,8 @@ header>.container {
   color: var(--primary-text-color);
 }
 
-/* Take off dots from all ul lists */
-.nav-list,
-.contacts-list,
-.btn-list,
-.project-list,
-.features-list,
-.work-list,
-.team-list {
+/* Take off dots from all lists */
+.list {
   list-style: none;
 }
 
@@ -101,6 +97,7 @@ header>.container {
 .hero {
   text-align: center;
   background-color: #2f303a;
+  height: 600px;
 }
 
 .hero-title {
@@ -125,9 +122,16 @@ header>.container {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  align-items: center;
   width: 200px;
   height: 50px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .btn,
@@ -171,7 +175,7 @@ header>.container {
 
 /* Team */
 .team {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .teammate {
@@ -220,7 +224,7 @@ header>.container {
   border-radius: 4px;
   border-color: currentColor;
   text-align: center;
-  }
+}
 
 .filter-btn:focus,
 .filter-btn:hover {
@@ -247,4 +251,3 @@ header>.container {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-
