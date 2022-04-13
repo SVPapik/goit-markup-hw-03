@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --background-color: #ffffff;
+  --secondary-background-color: #2f303a;
 }
 
 body {
@@ -26,6 +27,20 @@ img {
   height: auto;
 }
 
+/* Take off dots from all lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Take off underline from all links */
+.link,
+.contacts-link,
+.web {
+  text-decoration: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -33,7 +48,15 @@ img {
   padding: 0 15px;
 }
 
-/* ________________________________HEADER_____________________________________________ */
+/* sections margin bottom 94px */
+
+.features,
+.work,
+.team {
+  padding-bottom: 94px;
+}
+
+/* _______________________________________________________________HEADER_____________________________________________ */
 
 /* logo */
 .web {
@@ -54,10 +77,10 @@ img {
   line-height: 1.2;
 }
 
-header > .container {
+.site-header .container {
   display: flex;
   align-items: center;
-  height: 80px;
+  min-height: 80px;
 }
 
 .site-header {
@@ -68,7 +91,6 @@ header > .container {
 
 .nav-list {
   display: flex;
-  align-items: baseline;
   width: 294px;
   margin-left: 93px;
   justify-content: space-between;
@@ -94,44 +116,40 @@ header > .container {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
 
 .contacts-link {
   color: var(--primary-text-color);
 }
-
-/* Take off dots from all lists */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.site-header .contacts-link:last-child {
+  margin-left: 50px;
 }
 
-/* Take off underline from all links */
-.link,
-.contacts-link,
-.web {
-  text-decoration: none;
-}
-
-/* Hero */
+/* __________________________________________________________________HERO_________________________________ */
 .hero {
   text-align: center;
-  background-color: #2f303a;
-  height: 600px;
+  background-color: var(--secondary-background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 200px 0;
+  margin-bottom: 94px;
 }
 
 .hero-title {
   color: var(--background-color);
-  margin-top: 0;
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
-/* Button */
 .btn {
   background-color: var(--accent-color);
   color: var(--background-color);
@@ -142,8 +160,10 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover,
@@ -151,15 +171,18 @@ ul {
   background: #188ce8;
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 4px 4px 0px #000000 40;
 }
 
 .btn,
-.filter-btn {
+.filter-btn,
+.contacts,
+.nav-link {
   cursor: pointer;
 }
 
-/* Section Features */
+/* __________________________________________________________________FEATURES__________________________________ */
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -172,18 +195,30 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
-.title {
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
-.features-list .text {
+.features-text {
   line-height: 1.71;
 }
 
-/* Work */
+/* _______________________________________________________________WORK______________________________________________ */
+
 .work-title,
 .team-title {
   font-size: 36px;
@@ -191,45 +226,80 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
+  padding-bottom: 50px;
 }
 
-/* Team */
+.work-list,
+.team-list {
+  display: flex;
+}
+
+.work-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* _______________________________________________________________TEAM____________________________________________ */
+
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+}
+
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card:not(:first-child) {
+  margin-left: 30px;
 }
 
 .teammate {
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.job {
+.team-duty {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-/* Footer */
+/* _________________________________________________________________Footer___________________________________________ */
+
 .ftr {
-  background-color: #2f303a;
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-height: 252px;
 }
+
 .addrs {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.addrs > span {
-  color: var(--background-color);
+  margin-top: 20px;
+  max-height: 81px;
 }
 
 .location {
   color: var(--background-color);
   text-decoration: none;
+}
+
+.ftr .contacts {
+  padding-bottom: 9px;
 }
 
 /* Portfolio */
