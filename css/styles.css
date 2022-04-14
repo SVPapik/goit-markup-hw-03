@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --background-color: #ffffff;
   --secondary-background-color: #2f303a;
+  --black-clear-color: #000000;
 }
 
 body {
@@ -42,18 +43,16 @@ ul {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 1170px;
   padding: 0 15px;
 }
 
-/* sections margin bottom 94px */
+/* sections padding 94px */
 
-.features,
-.work,
-.team {
+.section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /* _______________________________________________________________HEADER_____________________________________________ */
@@ -63,7 +62,7 @@ ul {
   color: var(--accent-color);
 }
 .studio {
-  color: #000000;
+  color: var(--black-clear-color);
 }
 .studio.foot {
   color: var(--background-color);
@@ -80,7 +79,6 @@ ul {
 .site-header .container {
   display: flex;
   align-items: center;
-  min-height: 80px;
 }
 
 .site-header {
@@ -116,6 +114,12 @@ ul {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.link {
+  padding: 32px 25px;
+  display: block;
+}
+
 .contacts-list {
   display: flex;
   margin-left: auto;
@@ -124,9 +128,6 @@ ul {
 .contacts-link {
   color: var(--primary-text-color);
 }
-.site-header .contacts-link:last-child {
-  margin-left: 50px;
-}
 
 /* __________________________________________________________________HERO_________________________________ */
 .hero {
@@ -134,7 +135,6 @@ ul {
   background-color: var(--secondary-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 200px 0;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -151,27 +151,23 @@ ul {
 }
 
 .btn {
+  display: inline-block;
   background-color: var(--accent-color);
   color: var(--background-color);
-  font-family: 'Roboto';
+  font-family: inherit;
   font-style: normal;
-  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 10px 32px;
 }
 
 .btn:hover,
 .btn:focus {
   background: #188ce8;
-  border: 1px solid #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px 0px #000000 40;
+  border: 1px solid var(--black-clear-color);
 }
 
 .btn,
