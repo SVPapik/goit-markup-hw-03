@@ -320,6 +320,9 @@ ul {
 .addrs .contacts-link,
 .location {
   display: block;
+}
+
+.contacts-item {
   margin-bottom: 9px;
 }
 
