@@ -68,7 +68,7 @@ ul {
 
 .container {
   margin: 0 auto;
-  max-width: 1170px;
+  width: 1200px;
   padding: 0 15px;
 }
 
@@ -116,11 +116,11 @@ ul {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .nav-list {
   display: flex;
-  margin-left: 93px;
 }
 
 .nav-item:not(:last-child),
@@ -174,7 +174,7 @@ ul {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /* ___________________________________Button___ */
@@ -245,7 +245,7 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .work-list,
@@ -264,6 +264,7 @@ ul {
 }
 
 .team-card {
+  background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -308,7 +309,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .location {
@@ -319,7 +320,7 @@ ul {
 .addrs .contacts-link,
 .location {
   display: block;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 /*___________________________________________***PORTFOLIO***__________________________________________________- */
@@ -352,7 +353,7 @@ ul {
 .btn-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
